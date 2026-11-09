@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   check:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64, anvil-ci-linux]
     steps:
       - name: Check public installer endpoints
         id: endpoints
